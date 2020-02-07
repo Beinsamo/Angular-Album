@@ -1,0 +1,93 @@
+<div class="container">
+  <div class="row justify-content-center">
+
+  <div class="col"><a routerLink="/jan" (click)="changehome(true)" >
+    <ngb-carousel showNavigationArrows class="home_carousel" (mouseenter) ="imgselecton('jan')"  (mouseleave) ="imgselectoff('jan')" [@Mouseonoff]="select[0] ? 'mouseon' : 'mouseoff'">
+      <ng-template ngbSlide *ngFor="let photojan of photo_jan">
+        <div class="picsum-img-wrapper">
+          <img class="" src="{{photojan.img}}" alt="Random first slide">
+        </div>
+        <div class="carousel-caption">
+          <h4>January</h4>
+          <p>{{photojan.title}}</p>
+        </div>
+      </ng-template>
+    </ngb-carousel></a>
+  </div>
+
+  <div class="col">
+    <a routerLink="/feb" (click)="changehome(true)" >
+    <ngb-carousel showNavigationArrows class="home_carousel" (mouseenter) ="imgselecton('feb')"  (mouseleave) ="imgselectoff('feb')" [@Mouseonoff]="select[1] ? 'mouseon' : 'mouseoff'">
+      <ng-template ngbSlide *ngFor="let photofeb of photo_feb">
+        <div class="picsum-img-wrapper">
+          <img  src="{{photofeb.img}}" >
+        </div>
+        <div class="carousel-caption">
+          <h4>February</h4>
+          <p>{{photofeb.title}}</p>
+        </div>
+      </ng-template>
+    </ngb-carousel></a>
+  </div>
+
+  <div class="col">
+    <ngb-carousel showNavigationArrows class="home_carousel" (mouseenter) ="imgselecton('mar')"  (mouseleave) ="imgselectoff('mar')" [@Mouseonoff]="select[2] ? 'mouseon' : 'mouseoff'">
+      <ng-template ngbSlide *ngFor="let photomar of photo_mar">
+        <div class="picsum-img-wrapper">
+          <img class="" src="{{photomar.img}}" alt="Random first slide">
+        </div>
+        <div class="carousel-caption">
+          <h4>March</h4>
+          <p>{{photomar.title}}</p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+</div>
+</div>
+
+<div class="container">
+  <div class="row wrap">
+  <div class="col">
+    <ngb-carousel showNavigationArrows class="home_carousel" (mouseenter) ="imgselecton('apr')"  (mouseleave) ="imgselectoff('apr')" [@Mouseonoff]="select[3] ? 'mouseon' : 'mouseoff'">
+      <ng-template ngbSlide *ngFor="let photofeb of photo_feb">
+        <div class="picsum-img-wrapper">
+          <img class="" src="{{photofeb.img}}" alt="Random first slide">
+        </div>
+        <div class="carousel-caption">
+          <h4>April</h4>
+          <p>{{photofeb.title}}</p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+
+  <div class="col">
+    <ngb-carousel showNavigationArrows class="home_carousel" (mouseenter) ="imgselecton('may')"  (mouseleave) ="imgselectoff('may')" [@Mouseonoff]="select[4] ? 'mouseon' : 'mouseoff'">
+      <ng-template ngbSlide *ngFor="let photomar of photo_mar">
+        <div class="picsum-img-wrapper">
+          <img class="" src="{{photomar.img}}" >
+        </div>
+        <div class="carousel-caption">
+          <h4>May</h4>
+          <p>{{photomar.title}}</p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+
+  <div class="col">
+    <ngb-carousel showNavigationArrows class="home_carousel" (mouseenter) ="imgselecton('jun')"  (mouseleave) ="imgselectoff('jun')" [@Mouseonoff]="select[5] ? 'mouseon' : 'mouseoff'">
+      <ng-template ngbSlide *ngFor="let photojan of photo_jan">
+        <div class="picsum-img-wrapper">
+          <img class="" src="{{photojan.img}}" alt="Random first slide">
+        </div>
+        <div class="carousel-caption">
+          <h4>June</h4>
+          <p>{{photojan.title}}</p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+</div>
+</div>

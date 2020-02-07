@@ -1,0 +1,14 @@
+.home_carousel{
+  display: flex;
+  margin-top: 20px;
+  width: 350px;
+  height: 300px;
+}
+
+img{
+  height: 300px;
+  flex-grow: 1;
+  object-fit: cover;
+  max-width: 100%;
+  min-width: 100%;
+}
